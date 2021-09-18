@@ -1,0 +1,1 @@
+{"version":3,"file":"clientsDto.js","sourceRoot":"","sources":["../../../submodules/Ecommerce-Platform-Dtos/clientsDto.ts"],"names":[],"mappings":";;;AAAA,+CAA4C;AAE5C,MAAa,UAAW,SAAQ,iBAAO;IACnC;QACE,KAAK,EAAE,CAAC;QACR,IAAI,CAAC,UAAU,GAAG,IAAI,IAAI,EAAE,CAAC;QAC3B,IAAI,CAAC,WAAW,GAAG,IAAI,IAAI,EAAE,CAAC;IAElC,CAAC;CASJ;AAfD,gCAeC"}

@@ -1,0 +1,52 @@
+declare const feature_permissionsentityJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    feature_id: string;
+    operation_permitted: string;
+    role_id: string;
+    user_id: string;
+    role_feature_security: string;
+};
+declare const feature_permissionsdtoJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    feature_id: string;
+    operation_permitted: string;
+    role_id: string;
+    user_id: string;
+    role_feature_security: string;
+};
+declare const feature_permissionsentityToDtoJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    feature_id: string;
+    operation_permitted: string;
+    role_id: string;
+    user_id: string;
+    role_feature_security: string;
+};
+declare const feature_permissionsdtoToEntityJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    feature_id: string;
+    operation_permitted: string;
+    role_id: string;
+    user_id: string;
+    role_feature_security: string;
+};

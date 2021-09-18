@@ -1,0 +1,69 @@
+<div class="pt-3 pb-2 mb-3 border-bottom">
+</div>
+
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let order of orders">
+      <tr>
+        <td>{{order.Id}}</td>
+        <td>{{order.name}}</td>
+        <td>{{order.email}}</td>
+        
+        <td>
+          <div class="btn-group mr-2">
+            <a class="btn btn-sm btn-outline-secondary" (click)="select(order.Id)">View</a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <div class="overflow-hidden" [@tableState]="itemState(order.Id)">
+            <table class="table table-sm">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Product Title</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Order Id</th>
+              </tr>
+              </thead>
+              <tbody>
+               
+              <tr  *ngFor="let item of orderItems">
+
+                
+                <td *ngIf="item.order_id == selected" >{{item.Id}}</td>
+                <td *ngIf="item.order_id == selected">{{item.product_title}}</td>
+                <td *ngIf="item.order_id == selected">{{item.quantity}}</td>
+                <td *ngIf="item.order_id == selected">{{item.price}}</td>
+                <td *ngIf="item.order_id == selected">{{item.order_id}}</td>
+              
+          
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- 
+<app-paginator
+  [lastPage]="lastPage"
+  (pageChanged)="load($event)"
+></app-paginator> -->

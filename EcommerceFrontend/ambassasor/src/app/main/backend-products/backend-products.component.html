@@ -1,0 +1,32 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col-md-12 mb-4">
+      <div class="alert alert-info" role="alert" >
+       <a href="http://localhost:4400"> Go to Cart</a>
+      </div>
+    </div>
+  
+  
+  
+  
+    
+    
+  
+    <div class="col" *ngFor="let product of products">
+      <div class="card shadow-sm" >
+        <img src="product.image" height="200">
+  
+        <div class="card-body">
+          <p class="card-text">{{product.title}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">${{product.price}}</small>
+          </div>
+        </div>
+        <button (click)="add(product.Id)">Add</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-4" >
+    <button class="btn btn-primary">Load More</button>
+  </div>

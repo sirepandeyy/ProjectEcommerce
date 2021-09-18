@@ -1,0 +1,52 @@
+declare const usersentityJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    first_name: string;
+    last_name: string;
+    email: string;
+    password: string;
+    role_id: string;
+};
+declare const usersdtoJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    first_name: string;
+    last_name: string;
+    email: string;
+    password: string;
+    role_id: string;
+};
+declare const usersentityToDtoJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    first_name: string;
+    last_name: string;
+    email: string;
+    password: string;
+    role_id: string;
+};
+declare const usersdtoToEntityJson: {
+    Id: string;
+    ModifiedBy: string;
+    CreatedBy: string;
+    CreationDate: string;
+    ModifiedDate: string;
+    RowVersion: string;
+    first_name: string;
+    last_name: string;
+    email: string;
+    password: string;
+    role_id: string;
+};

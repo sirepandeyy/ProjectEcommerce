@@ -1,0 +1,5 @@
+[2021-08-27T07:01:22.768Z][QUERY]: START TRANSACTION
+[2021-08-27T07:01:22.804Z][QUERY]: SELECT * FROM current_schema()
+[2021-08-27T07:01:22.807Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = 'public' AND "table_name" = 'typeorm_metadata'
+[2021-08-27T07:01:22.812Z][QUERY]: SELECT * FROM current_schema()
+[2021-08-27T07:01:22.815Z][QUERY]: COMMIT

@@ -1,0 +1,31 @@
+import { DtoBase } from './../Ecommerce-Platform-Dtos/DtoBase/dtobase';
+import { ServiceOperationResultType } from "./ServiceOperationResultType";
+import { Message } from "./Message";
+export declare class ResponseModel<TDto extends DtoBase> {
+    private RequestId;
+    private DataCollection;
+    private ResultType;
+    private Status;
+    private Messages;
+    zoomToken: string;
+    private SocketId;
+    private CommunityUrl;
+    constructor(requestId: string, data: Array<TDto> | null, resultType: ServiceOperationResultType, errorCode: string, statusMessage: string | null, localizedStatusMessage: string | null, message: Array<Message> | null, socketId: string, communityUrl: string);
+    getRequestId(): string;
+    setRequestId(RequestId: string): void;
+    getCommunityUrl(): string;
+    setMessage(statusCode: string, input_message: string): void;
+    setCommunityUrl(communityUrl: string): void;
+    getDataCollection(): TDto[] | null;
+    setDataCollection(DataCollection: TDto[]): void;
+    getResultType(): number;
+    getData(): TDto | null;
+    getSocketId(): string;
+    setSocketId(socketId: string): void;
+    setStatus(Status: Message): void;
+    getMessages(): Array<Message> | null;
+    CreateFailureResult(requestId: string, message: string, messages: Array<Message>, localizedMessage?: string, validationCode?: string, socketId?: string, communityUrl?: string): ResponseModel<TDto> | null;
+    CreateErrorResult(requestId: string, errorCode: string, message?: string, localizedMessage?: string, socketId?: string, communityUrl?: string): ResponseModel<TDto>;
+    CreateSuccessResult(requestId: string, data: Array<TDto>, message: string | null, messages: Array<Message> | null, localizedMessage: string | null, socketId?: string, communityUrl?: string): ResponseModel<TDto>;
+    echo<D>(arg: D): D;
+}
